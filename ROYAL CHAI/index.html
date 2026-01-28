@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Chai Premix - Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Logo and Tagline -->
+    <div class="container">
+        <div class="logo">ROYAL CHAI</div>
+        <h1 class="tagline">"Brew the Royal Tradition"</h1>
+        <p class="description">
+            Premium instant chai tea premix inspired by royal Indian households. Experience the authentic flavors of tradition in every cup.
+        </p>
+
+        <div class="launching-soon">LAUNCHING SOON</div>
+        <div class="email-signup">
+            <h3>Be the First to Know</h3>
+            <form id="signupForm">
+                <input type="email" class="email-input" placeholder="Enter your email address" required>
+                <br>
+                <button type="submit" class="signup-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Social Icons -->
+      <div class="social-icons">
+    <a href="https://instagram.com/royalchailove" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/919999999999" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://x.com/royalchailove" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://youtube.com/@royalchailove" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+</div>
+    </div>
+ <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('.email-input').value;
+            if (email) {
+                alert('Thank you for signing up! We\'ll notify you when we launch.');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
